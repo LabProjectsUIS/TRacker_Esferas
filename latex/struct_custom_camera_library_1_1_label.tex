@@ -1,0 +1,69 @@
+\hypertarget{struct_custom_camera_library_1_1_label}{}\section{Custom\+Camera\+Library\+:\+:Label Struct Reference}
+\label{struct_custom_camera_library_1_1_label}\index{Custom\+Camera\+Library\+::\+Label@{Custom\+Camera\+Library\+::\+Label}}
+
+
+Esta estructura permite ir haciendo un seguimiento de cada uno de los nodos encontrados en proceso de indentificación de los cuerpos rígidos y es utilizada en el momento de identificar los objetos rígidos en escena.  
+
+
+
+
+{\ttfamily \#include $<$detectbr.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{struct_custom_camera_library_1_1_label_ab47ae69658cf38cb404be369acd6b004}{nro}
+\item 
+int \hyperlink{struct_custom_camera_library_1_1_label_ab2b02b75eea4dbbce1a157e27142019f}{prev}
+\item 
+float \hyperlink{struct_custom_camera_library_1_1_label_a2c76fc89c6d5ebd560e1081d456052fc}{peso}
+\item 
+int \hyperlink{struct_custom_camera_library_1_1_label_aee7618e63b0af9f8471c6c666ccb033f}{marca}
+\item 
+int \hyperlink{struct_custom_camera_library_1_1_label_a6975017853bad717d96e213e22cc0e18}{objR}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Esta estructura permite ir haciendo un seguimiento de cada uno de los nodos encontrados en proceso de indentificación de los cuerpos rígidos y es utilizada en el momento de identificar los objetos rígidos en escena. 
+
+\subsection{Member Data Documentation}
+\index{Custom\+Camera\+Library\+::\+Label@{Custom\+Camera\+Library\+::\+Label}!marca@{marca}}
+\index{marca@{marca}!Custom\+Camera\+Library\+::\+Label@{Custom\+Camera\+Library\+::\+Label}}
+\subsubsection[{\texorpdfstring{marca}{marca}}]{\setlength{\rightskip}{0pt plus 5cm}Custom\+Camera\+Library\+::\+Label\+::marca}\hypertarget{struct_custom_camera_library_1_1_label_aee7618e63b0af9f8471c6c666ccb033f}{}\label{struct_custom_camera_library_1_1_label_aee7618e63b0af9f8471c6c666ccb033f}
+Indica si la esfera ha sido marcada o no. \index{Custom\+Camera\+Library\+::\+Label@{Custom\+Camera\+Library\+::\+Label}!nro@{nro}}
+\index{nro@{nro}!Custom\+Camera\+Library\+::\+Label@{Custom\+Camera\+Library\+::\+Label}}
+\subsubsection[{\texorpdfstring{nro}{nro}}]{\setlength{\rightskip}{0pt plus 5cm}Custom\+Camera\+Library\+::\+Label\+::nro}\hypertarget{struct_custom_camera_library_1_1_label_ab47ae69658cf38cb404be369acd6b004}{}\label{struct_custom_camera_library_1_1_label_ab47ae69658cf38cb404be369acd6b004}
+Contiene el número del nodo. \index{Custom\+Camera\+Library\+::\+Label@{Custom\+Camera\+Library\+::\+Label}!objR@{objR}}
+\index{objR@{objR}!Custom\+Camera\+Library\+::\+Label@{Custom\+Camera\+Library\+::\+Label}}
+\subsubsection[{\texorpdfstring{objR}{objR}}]{\setlength{\rightskip}{0pt plus 5cm}Custom\+Camera\+Library\+::\+Label\+::objR}\hypertarget{struct_custom_camera_library_1_1_label_a6975017853bad717d96e213e22cc0e18}{}\label{struct_custom_camera_library_1_1_label_a6975017853bad717d96e213e22cc0e18}
+Contiene el identificador del objeto rígido al que pertenece. Según la matriz de distancias de entrada; el C.\+R. 1 corresponde a la 1ra fila de la matriz de distancias teóricas y así susecivamente.
+
+Ejemplo de una matriz de distancias\+: \begin{DoxyVerb} Mat_<float> distances = (Mat_<float>(4, 6) <<
+
+     20.05, 29.26, 49.67, 39.82, 49.55, 51.53,     // POINTER
+
+     35.22, 59.15, 25.07, 44.73, 51.63, 54.93,     //FEMUR
+
+     89.74, 107.01, 80.03, 70.26, 103.56, 59.74,   //TIBIA
+
+     64.75, 118.23, 183.64, 55.66, 126.57, 73.28); //GAFAS
+\end{DoxyVerb}
+
+
+cada fila esta formada por las distancias que hay entre cada esfera que forma un cuerpo rígido. Si el objeto rígido no es identificado entonces tendrá valor de -\/1. \begin{DoxySeeAlso}{See also}
+Custom\+Camera\+Library\+::distances 
+
+Custom\+Camera\+Library\+::joskstra() 
+\end{DoxySeeAlso}
+\index{Custom\+Camera\+Library\+::\+Label@{Custom\+Camera\+Library\+::\+Label}!peso@{peso}}
+\index{peso@{peso}!Custom\+Camera\+Library\+::\+Label@{Custom\+Camera\+Library\+::\+Label}}
+\subsubsection[{\texorpdfstring{peso}{peso}}]{\setlength{\rightskip}{0pt plus 5cm}Custom\+Camera\+Library\+::\+Label\+::peso}\hypertarget{struct_custom_camera_library_1_1_label_a2c76fc89c6d5ebd560e1081d456052fc}{}\label{struct_custom_camera_library_1_1_label_a2c76fc89c6d5ebd560e1081d456052fc}
+Distancia del nodo hasta el nodo de referencia. \index{Custom\+Camera\+Library\+::\+Label@{Custom\+Camera\+Library\+::\+Label}!prev@{prev}}
+\index{prev@{prev}!Custom\+Camera\+Library\+::\+Label@{Custom\+Camera\+Library\+::\+Label}}
+\subsubsection[{\texorpdfstring{prev}{prev}}]{\setlength{\rightskip}{0pt plus 5cm}Custom\+Camera\+Library\+::\+Label\+::prev}\hypertarget{struct_custom_camera_library_1_1_label_ab2b02b75eea4dbbce1a157e27142019f}{}\label{struct_custom_camera_library_1_1_label_ab2b02b75eea4dbbce1a157e27142019f}
+Nodo precedente (-\/1 para el nodo inicial). 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/eduar\+\_\+000/\+Documents/\+Visual Studio 2015/\+Projects/\+Navar\+Q\+A/\+Navar\+Q\+A/detectbr.\+h\end{DoxyCompactItemize}

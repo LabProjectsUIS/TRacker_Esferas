@@ -1,0 +1,83 @@
+\hypertarget{class_n_a_t_utils}{}\section{N\+A\+T\+Utils Class Reference}
+\label{class_n_a_t_utils}\index{N\+A\+T\+Utils@{N\+A\+T\+Utils}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries Get\+Local\+I\+P\+Addresses} (unsigned long Addresses\mbox{[}$\,$\mbox{]}, int n\+Max)\hypertarget{class_n_a_t_utils_ae555d6ef00b1390a4a69ee677c8a97f1}{}\label{class_n_a_t_utils_ae555d6ef00b1390a4a69ee677c8a97f1}
+
+\item 
+static int {\bfseries Get\+Local\+I\+P\+Addresses2} (unsigned long Addresses\mbox{[}$\,$\mbox{]}, int n\+Max)\hypertarget{class_n_a_t_utils_aeaa1337aa84cffe493d53fdcd809eff7}{}\label{class_n_a_t_utils_aeaa1337aa84cffe493d53fdcd809eff7}
+
+\item 
+{\footnotesize template$<$typename T $>$ }\\static void \hyperlink{class_n_a_t_utils_a1786ab9e713ac59587dbe6050d8b91fc}{Qaternion\+To\+Rotation\+Matrix} (T $\ast$q, T $\ast$m)
+\begin{DoxyCompactList}\small\item\em Converts a quaternion to a rotation matrix. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\static void \hyperlink{class_n_a_t_utils_a825d3061e86f9ac7323935786e8d6c73}{Vec3\+Matrix\+Mult} (T $\ast$v, T $\ast$m)
+\begin{DoxyCompactList}\small\item\em Multiplies a vector with 3 components by a 3 x 3 matrix and overwrites the input vector with the result. \end{DoxyCompactList}\item 
+static float \hyperlink{class_n_a_t_utils_a2abf69f59abce23991c399d9775cec5a}{Radians\+To\+Degrees} (float f\+Radians)
+\begin{DoxyCompactList}\small\item\em Converts radians to degrees. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{N\+A\+T\+Utils@{N\+A\+T\+Utils}!Qaternion\+To\+Rotation\+Matrix@{Qaternion\+To\+Rotation\+Matrix}}
+\index{Qaternion\+To\+Rotation\+Matrix@{Qaternion\+To\+Rotation\+Matrix}!N\+A\+T\+Utils@{N\+A\+T\+Utils}}
+\subsubsection[{\texorpdfstring{Qaternion\+To\+Rotation\+Matrix(\+T $\ast$q, T $\ast$m)}{QaternionToRotationMatrix(T *q, T *m)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void N\+A\+T\+Utils\+::\+Qaternion\+To\+Rotation\+Matrix (
+\begin{DoxyParamCaption}
+\item[{T $\ast$}]{q, }
+\item[{T $\ast$}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_n_a_t_utils_a1786ab9e713ac59587dbe6050d8b91fc}{}\label{class_n_a_t_utils_a1786ab9e713ac59587dbe6050d8b91fc}
+
+
+Converts a quaternion to a rotation matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & Quaternion stored in x, y, z, w order.\\
+\hline
+{\em m} & Pointer to an array of length 9. Rotation matrix is placed into this array in column major order.\\
+\hline
+\end{DoxyParams}
+\index{N\+A\+T\+Utils@{N\+A\+T\+Utils}!Radians\+To\+Degrees@{Radians\+To\+Degrees}}
+\index{Radians\+To\+Degrees@{Radians\+To\+Degrees}!N\+A\+T\+Utils@{N\+A\+T\+Utils}}
+\subsubsection[{\texorpdfstring{Radians\+To\+Degrees(float f\+Radians)}{RadiansToDegrees(float fRadians)}}]{\setlength{\rightskip}{0pt plus 5cm}static float N\+A\+T\+Utils\+::\+Radians\+To\+Degrees (
+\begin{DoxyParamCaption}
+\item[{float}]{f\+Radians}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{class_n_a_t_utils_a2abf69f59abce23991c399d9775cec5a}{}\label{class_n_a_t_utils_a2abf69f59abce23991c399d9775cec5a}
+
+
+Converts radians to degrees. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+Radians} & Radians.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Degrees.
+\end{DoxyReturn}
+\index{N\+A\+T\+Utils@{N\+A\+T\+Utils}!Vec3\+Matrix\+Mult@{Vec3\+Matrix\+Mult}}
+\index{Vec3\+Matrix\+Mult@{Vec3\+Matrix\+Mult}!N\+A\+T\+Utils@{N\+A\+T\+Utils}}
+\subsubsection[{\texorpdfstring{Vec3\+Matrix\+Mult(\+T $\ast$v, T $\ast$m)}{Vec3MatrixMult(T *v, T *m)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void N\+A\+T\+Utils\+::\+Vec3\+Matrix\+Mult (
+\begin{DoxyParamCaption}
+\item[{T $\ast$}]{v, }
+\item[{T $\ast$}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_n_a_t_utils_a825d3061e86f9ac7323935786e8d6c73}{}\label{class_n_a_t_utils_a825d3061e86f9ac7323935786e8d6c73}
+
+
+Multiplies a vector with 3 components by a 3 x 3 matrix and overwrites the input vector with the result. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & On input a vector with 3 components. On output the result of the multiplication.\\
+\hline
+{\em m} & 3 x 3 matrix stored in column major order\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/eduar\+\_\+000/\+Documents/\+Visual Studio 2015/\+Projects/\+Navar\+Q\+A/\+Navar\+Q\+A/N\+A\+T\+Utils.\+h\item 
+C\+:/\+Users/eduar\+\_\+000/\+Documents/\+Visual Studio 2015/\+Projects/\+Navar\+Q\+A/\+Navar\+Q\+A/N\+A\+T\+Utils.\+cpp\end{DoxyCompactItemize}

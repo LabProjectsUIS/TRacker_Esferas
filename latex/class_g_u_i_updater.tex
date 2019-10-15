@@ -1,0 +1,252 @@
+\hypertarget{class_g_u_i_updater}{}\section{G\+U\+I\+Updater Class Reference}
+\label{class_g_u_i_updater}\index{G\+U\+I\+Updater@{G\+U\+I\+Updater}}
+Inheritance diagram for G\+U\+I\+Updater\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_g_u_i_updater}
+\end{center}
+\end{figure}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries update\+Left\+Camera} (const Q\+Image \&)\hypertarget{class_g_u_i_updater_afacf05ece0988f07662eaab5591fd8b7}{}\label{class_g_u_i_updater_afacf05ece0988f07662eaab5591fd8b7}
+
+\item 
+void {\bfseries update\+Right\+Camera} (const Q\+Image \&)\hypertarget{class_g_u_i_updater_a1590223624b4a314a9fe56db73d984ab}{}\label{class_g_u_i_updater_a1590223624b4a314a9fe56db73d984ab}
+
+\item 
+void {\bfseries do\+Flash} ()\hypertarget{class_g_u_i_updater_ad8113ad71fe2b1cd68b11bf69fc04f95}{}\label{class_g_u_i_updater_ad8113ad71fe2b1cd68b11bf69fc04f95}
+
+\item 
+void {\bfseries start\+Calibration} ()\hypertarget{class_g_u_i_updater_a1ab6dfde2b8ea0700d212def0670ab9b}{}\label{class_g_u_i_updater_a1ab6dfde2b8ea0700d212def0670ab9b}
+
+\item 
+void {\bfseries start\+Server} ()\hypertarget{class_g_u_i_updater_acc51b4ad134d5972231c4815d6148b83}{}\label{class_g_u_i_updater_acc51b4ad134d5972231c4815d6148b83}
+
+\item 
+void {\bfseries pointer\+Detected} ()\hypertarget{class_g_u_i_updater_af4c1cc78e23aa37ff6766be12f45b75f}{}\label{class_g_u_i_updater_af4c1cc78e23aa37ff6766be12f45b75f}
+
+\item 
+void {\bfseries pointer\+Not\+Detected} ()\hypertarget{class_g_u_i_updater_a25d97041202cd55c22064b99bddefc5f}{}\label{class_g_u_i_updater_a25d97041202cd55c22064b99bddefc5f}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_g_u_i_updater_aead8933227b7b7cc78e23b98d6c80ab1}{G\+U\+I\+Updater} (Q\+Object $\ast$parent=0)
+\item 
+\hyperlink{class_g_u_i_updater_aabcc67dca68b515f3a86caab5f347b8e}{$\sim$\+G\+U\+I\+Updater} ()
+\item 
+bool \hyperlink{class_g_u_i_updater_af392547bf970784b35f47118512edb0e}{activate\+Cameras} ()
+\item 
+void \hyperlink{class_g_u_i_updater_a965d3cc548ceb3bfad4dd3be8ddd4e54}{start\+Cameras} ()
+\item 
+void \hyperlink{class_g_u_i_updater_ae51c4254189ed802733dcf6922851426}{Shut\+Down\+Cameras} ()
+\item 
+void \hyperlink{class_g_u_i_updater_acf45c3f51346a40e94988d2544650d3b}{Show\+Cameras} ()
+\item 
+bool \hyperlink{class_g_u_i_updater_abfd0c6a214ab802eaa64e689010cdfeb}{get\+Pointer\+Data} (const std\+::string \&file\+Name)
+\item 
+void \hyperlink{class_g_u_i_updater_a677be84d397c616cb70d011b127406a5}{get\+Rigids\+Data} ()
+\item 
+bool \hyperlink{class_g_u_i_updater_abed450cacbd127705c14f797a5c1470d}{calib\+Pointer} ()
+\item 
+void \hyperlink{class_g_u_i_updater_a978e2b67abc8c081b61a7b0956bcabe4}{set\+Show\+Zone} (bool status)
+\item 
+void \hyperlink{class_g_u_i_updater_aa0677943be1e52a2852295384034fcd9}{set\+Take\+Snapshot} (bool status)
+\item 
+void \hyperlink{class_g_u_i_updater_a0646d9ce35c4fdcfc3ffa99c2b795bbe}{set\+Pics2\+Take} (int num\+Pics)
+\item 
+void \hyperlink{class_g_u_i_updater_ae5ce3b5dc00512e178cd7d7b16596463}{set\+Detect\+Rigids} (bool status)
+\item 
+void \hyperlink{class_g_u_i_updater_aa938ec821b9be8d1cd953fb0f9cbde5f}{set\+Detect\+Pointer} (bool status)
+\item 
+void \hyperlink{class_g_u_i_updater_af5e61de316d9cb02a61944319e25f6d1}{set\+Delta} (float delta)
+\item 
+void \hyperlink{class_g_u_i_updater_a8d47fbed8c4e041cbc91c2e868000e4e}{write\+Matrices} ()
+\item 
+void \hyperlink{class_g_u_i_updater_ae716caa2ecd78c5fa939f9cb34a0bc48}{set\+Centroid} (cv\+::\+Mat\+\_\+$<$ double $>$ centroid, std\+::string \&bone)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{G\+U\+I\+Updater@{G\+U\+I\+Updater}!G\+U\+I\+Updater@{G\+U\+I\+Updater}}
+\index{G\+U\+I\+Updater@{G\+U\+I\+Updater}!G\+U\+I\+Updater@{G\+U\+I\+Updater}}
+\subsubsection[{\texorpdfstring{G\+U\+I\+Updater(\+Q\+Object $\ast$parent=0)}{GUIUpdater(QObject *parent=0)}}]{\setlength{\rightskip}{0pt plus 5cm}G\+U\+I\+Updater\+::\+G\+U\+I\+Updater (
+\begin{DoxyParamCaption}
+\item[{Q\+Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{class_g_u_i_updater_aead8933227b7b7cc78e23b98d6c80ab1}{}\label{class_g_u_i_updater_aead8933227b7b7cc78e23b98d6c80ab1}
+Constructor por defecto \index{G\+U\+I\+Updater@{G\+U\+I\+Updater}!````~G\+U\+I\+Updater@{$\sim$\+G\+U\+I\+Updater}}
+\index{````~G\+U\+I\+Updater@{$\sim$\+G\+U\+I\+Updater}!G\+U\+I\+Updater@{G\+U\+I\+Updater}}
+\subsubsection[{\texorpdfstring{$\sim$\+G\+U\+I\+Updater()}{~GUIUpdater()}}]{\setlength{\rightskip}{0pt plus 5cm}G\+U\+I\+Updater\+::$\sim$\+G\+U\+I\+Updater (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_g_u_i_updater_aabcc67dca68b515f3a86caab5f347b8e}{}\label{class_g_u_i_updater_aabcc67dca68b515f3a86caab5f347b8e}
+Destructor por defecto 
+
+\subsection{Member Function Documentation}
+\index{G\+U\+I\+Updater@{G\+U\+I\+Updater}!activate\+Cameras@{activate\+Cameras}}
+\index{activate\+Cameras@{activate\+Cameras}!G\+U\+I\+Updater@{G\+U\+I\+Updater}}
+\subsubsection[{\texorpdfstring{activate\+Cameras()}{activateCameras()}}]{\setlength{\rightskip}{0pt plus 5cm}bool G\+U\+I\+Updater\+::activate\+Cameras (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_g_u_i_updater_af392547bf970784b35f47118512edb0e}{}\label{class_g_u_i_updater_af392547bf970784b35f47118512edb0e}
+Obtiene una instancia de cada cámaras. \begin{DoxyReturn}{Returns}
+verdadero/falso si pudo/no pudo activar las dos cámaras. 
+\end{DoxyReturn}
+\index{G\+U\+I\+Updater@{G\+U\+I\+Updater}!calib\+Pointer@{calib\+Pointer}}
+\index{calib\+Pointer@{calib\+Pointer}!G\+U\+I\+Updater@{G\+U\+I\+Updater}}
+\subsubsection[{\texorpdfstring{calib\+Pointer()}{calibPointer()}}]{\setlength{\rightskip}{0pt plus 5cm}bool G\+U\+I\+Updater\+::calib\+Pointer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_g_u_i_updater_abed450cacbd127705c14f797a5c1470d}{}\label{class_g_u_i_updater_abed450cacbd127705c14f797a5c1470d}
+Si detecta el pointer, almacena los puntos barridos en un archivo. También emite señales para indicar si se está detectando o no el pointer en el momento. 
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & nombre del archivo. \\
+\hline
+\end{DoxyParams}
+\index{G\+U\+I\+Updater@{G\+U\+I\+Updater}!get\+Pointer\+Data@{get\+Pointer\+Data}}
+\index{get\+Pointer\+Data@{get\+Pointer\+Data}!G\+U\+I\+Updater@{G\+U\+I\+Updater}}
+\subsubsection[{\texorpdfstring{get\+Pointer\+Data(const std\+::string \&file\+Name)}{getPointerData(const std::string &fileName)}}]{\setlength{\rightskip}{0pt plus 5cm}bool G\+U\+I\+Updater\+::get\+Pointer\+Data (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{file\+Name}
+\end{DoxyParamCaption}
+)}\hypertarget{class_g_u_i_updater_abfd0c6a214ab802eaa64e689010cdfeb}{}\label{class_g_u_i_updater_abfd0c6a214ab802eaa64e689010cdfeb}
+Si detecta el pointer, almacena los puntos barridos en un archivo. También emite señales para indicar si se está detectando o no el pointer en el momento. 
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & nombre del archivo. \\
+\hline
+\end{DoxyParams}
+\index{G\+U\+I\+Updater@{G\+U\+I\+Updater}!get\+Rigids\+Data@{get\+Rigids\+Data}}
+\index{get\+Rigids\+Data@{get\+Rigids\+Data}!G\+U\+I\+Updater@{G\+U\+I\+Updater}}
+\subsubsection[{\texorpdfstring{get\+Rigids\+Data()}{getRigidsData()}}]{\setlength{\rightskip}{0pt plus 5cm}void G\+U\+I\+Updater\+::get\+Rigids\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_g_u_i_updater_a677be84d397c616cb70d011b127406a5}{}\label{class_g_u_i_updater_a677be84d397c616cb70d011b127406a5}
+Detecta los rígidos en escena, inicia el servidor y lo utiliza para enviar los datos a la escena de Unity. \index{G\+U\+I\+Updater@{G\+U\+I\+Updater}!set\+Centroid@{set\+Centroid}}
+\index{set\+Centroid@{set\+Centroid}!G\+U\+I\+Updater@{G\+U\+I\+Updater}}
+\subsubsection[{\texorpdfstring{set\+Centroid(cv\+::\+Mat\+\_\+$<$ double $>$ centroid, std\+::string \&bone)}{setCentroid(cv::Mat_< double > centroid, std::string &bone)}}]{\setlength{\rightskip}{0pt plus 5cm}void G\+U\+I\+Updater\+::set\+Centroid (
+\begin{DoxyParamCaption}
+\item[{cv\+::\+Mat\+\_\+$<$ double $>$}]{centroid, }
+\item[{std\+::string \&}]{bone}
+\end{DoxyParamCaption}
+)}\hypertarget{class_g_u_i_updater_ae716caa2ecd78c5fa939f9cb34a0bc48}{}\label{class_g_u_i_updater_ae716caa2ecd78c5fa939f9cb34a0bc48}
+Asocia las coordendas del centroide de cada uno de los huesos. 
+\begin{DoxyParams}{Parameters}
+{\em centroid} & coordenadas en 3D del centroide del hueso. \\
+\hline
+{\em bone} & nombre del hueso al cual se le asociarán las coordenadas. \\
+\hline
+\end{DoxyParams}
+\index{G\+U\+I\+Updater@{G\+U\+I\+Updater}!set\+Delta@{set\+Delta}}
+\index{set\+Delta@{set\+Delta}!G\+U\+I\+Updater@{G\+U\+I\+Updater}}
+\subsubsection[{\texorpdfstring{set\+Delta(float delta)}{setDelta(float delta)}}]{\setlength{\rightskip}{0pt plus 5cm}void G\+U\+I\+Updater\+::set\+Delta (
+\begin{DoxyParamCaption}
+\item[{float}]{delta}
+\end{DoxyParamCaption}
+)}\hypertarget{class_g_u_i_updater_af5e61de316d9cb02a61944319e25f6d1}{}\label{class_g_u_i_updater_af5e61de316d9cb02a61944319e25f6d1}
+Setter para delta 
+\begin{DoxyParams}{Parameters}
+{\em delta} & nuevo estado \\
+\hline
+\end{DoxyParams}
+\index{G\+U\+I\+Updater@{G\+U\+I\+Updater}!set\+Detect\+Pointer@{set\+Detect\+Pointer}}
+\index{set\+Detect\+Pointer@{set\+Detect\+Pointer}!G\+U\+I\+Updater@{G\+U\+I\+Updater}}
+\subsubsection[{\texorpdfstring{set\+Detect\+Pointer(bool status)}{setDetectPointer(bool status)}}]{\setlength{\rightskip}{0pt plus 5cm}void G\+U\+I\+Updater\+::set\+Detect\+Pointer (
+\begin{DoxyParamCaption}
+\item[{bool}]{status}
+\end{DoxyParamCaption}
+)}\hypertarget{class_g_u_i_updater_aa938ec821b9be8d1cd953fb0f9cbde5f}{}\label{class_g_u_i_updater_aa938ec821b9be8d1cd953fb0f9cbde5f}
+Setter para detect\+Pointer 
+\begin{DoxyParams}{Parameters}
+{\em status} & nuevo estado \\
+\hline
+\end{DoxyParams}
+\index{G\+U\+I\+Updater@{G\+U\+I\+Updater}!set\+Detect\+Rigids@{set\+Detect\+Rigids}}
+\index{set\+Detect\+Rigids@{set\+Detect\+Rigids}!G\+U\+I\+Updater@{G\+U\+I\+Updater}}
+\subsubsection[{\texorpdfstring{set\+Detect\+Rigids(bool status)}{setDetectRigids(bool status)}}]{\setlength{\rightskip}{0pt plus 5cm}void G\+U\+I\+Updater\+::set\+Detect\+Rigids (
+\begin{DoxyParamCaption}
+\item[{bool}]{status}
+\end{DoxyParamCaption}
+)}\hypertarget{class_g_u_i_updater_ae5ce3b5dc00512e178cd7d7b16596463}{}\label{class_g_u_i_updater_ae5ce3b5dc00512e178cd7d7b16596463}
+Setter para detect\+Rigids 
+\begin{DoxyParams}{Parameters}
+{\em status} & nuevo estado \\
+\hline
+\end{DoxyParams}
+\index{G\+U\+I\+Updater@{G\+U\+I\+Updater}!set\+Pics2\+Take@{set\+Pics2\+Take}}
+\index{set\+Pics2\+Take@{set\+Pics2\+Take}!G\+U\+I\+Updater@{G\+U\+I\+Updater}}
+\subsubsection[{\texorpdfstring{set\+Pics2\+Take(int num\+Pics)}{setPics2Take(int numPics)}}]{\setlength{\rightskip}{0pt plus 5cm}void G\+U\+I\+Updater\+::set\+Pics2\+Take (
+\begin{DoxyParamCaption}
+\item[{int}]{num\+Pics}
+\end{DoxyParamCaption}
+)}\hypertarget{class_g_u_i_updater_a0646d9ce35c4fdcfc3ffa99c2b795bbe}{}\label{class_g_u_i_updater_a0646d9ce35c4fdcfc3ffa99c2b795bbe}
+Setter para Pics2\+Take 
+\begin{DoxyParams}{Parameters}
+{\em num\+Pics} & número de imágenes \\
+\hline
+\end{DoxyParams}
+\index{G\+U\+I\+Updater@{G\+U\+I\+Updater}!set\+Show\+Zone@{set\+Show\+Zone}}
+\index{set\+Show\+Zone@{set\+Show\+Zone}!G\+U\+I\+Updater@{G\+U\+I\+Updater}}
+\subsubsection[{\texorpdfstring{set\+Show\+Zone(bool status)}{setShowZone(bool status)}}]{\setlength{\rightskip}{0pt plus 5cm}void G\+U\+I\+Updater\+::set\+Show\+Zone (
+\begin{DoxyParamCaption}
+\item[{bool}]{status}
+\end{DoxyParamCaption}
+)}\hypertarget{class_g_u_i_updater_a978e2b67abc8c081b61a7b0956bcabe4}{}\label{class_g_u_i_updater_a978e2b67abc8c081b61a7b0956bcabe4}
+Setter para show\+Zone 
+\begin{DoxyParams}{Parameters}
+{\em status} & nuevo estado \\
+\hline
+\end{DoxyParams}
+\index{G\+U\+I\+Updater@{G\+U\+I\+Updater}!set\+Take\+Snapshot@{set\+Take\+Snapshot}}
+\index{set\+Take\+Snapshot@{set\+Take\+Snapshot}!G\+U\+I\+Updater@{G\+U\+I\+Updater}}
+\subsubsection[{\texorpdfstring{set\+Take\+Snapshot(bool status)}{setTakeSnapshot(bool status)}}]{\setlength{\rightskip}{0pt plus 5cm}void G\+U\+I\+Updater\+::set\+Take\+Snapshot (
+\begin{DoxyParamCaption}
+\item[{bool}]{status}
+\end{DoxyParamCaption}
+)}\hypertarget{class_g_u_i_updater_aa0677943be1e52a2852295384034fcd9}{}\label{class_g_u_i_updater_aa0677943be1e52a2852295384034fcd9}
+Setter para take\+Snapshot 
+\begin{DoxyParams}{Parameters}
+{\em status} & nuevo estado \\
+\hline
+\end{DoxyParams}
+\index{G\+U\+I\+Updater@{G\+U\+I\+Updater}!Show\+Cameras@{Show\+Cameras}}
+\index{Show\+Cameras@{Show\+Cameras}!G\+U\+I\+Updater@{G\+U\+I\+Updater}}
+\subsubsection[{\texorpdfstring{Show\+Cameras()}{ShowCameras()}}]{\setlength{\rightskip}{0pt plus 5cm}void G\+U\+I\+Updater\+::\+Show\+Cameras (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_g_u_i_updater_acf45c3f51346a40e94988d2544650d3b}{}\label{class_g_u_i_updater_acf45c3f51346a40e94988d2544650d3b}
+Envía los frames de cada una de las cámaras a la G\+UI mediante señales y controla la lógica de captura de imágenes. \index{G\+U\+I\+Updater@{G\+U\+I\+Updater}!Shut\+Down\+Cameras@{Shut\+Down\+Cameras}}
+\index{Shut\+Down\+Cameras@{Shut\+Down\+Cameras}!G\+U\+I\+Updater@{G\+U\+I\+Updater}}
+\subsubsection[{\texorpdfstring{Shut\+Down\+Cameras()}{ShutDownCameras()}}]{\setlength{\rightskip}{0pt plus 5cm}void G\+U\+I\+Updater\+::\+Shut\+Down\+Cameras (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_g_u_i_updater_ae51c4254189ed802733dcf6922851426}{}\label{class_g_u_i_updater_ae51c4254189ed802733dcf6922851426}
+Apaga las cámaras adecuadamente. \index{G\+U\+I\+Updater@{G\+U\+I\+Updater}!start\+Cameras@{start\+Cameras}}
+\index{start\+Cameras@{start\+Cameras}!G\+U\+I\+Updater@{G\+U\+I\+Updater}}
+\subsubsection[{\texorpdfstring{start\+Cameras()}{startCameras()}}]{\setlength{\rightskip}{0pt plus 5cm}void G\+U\+I\+Updater\+::start\+Cameras (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_g_u_i_updater_a965d3cc548ceb3bfad4dd3be8ddd4e54}{}\label{class_g_u_i_updater_a965d3cc548ceb3bfad4dd3be8ddd4e54}
+Configura el modo de video de las cámaras (modo Escala de grises) y demás parámetros iniciales (exposición, intensidad y umbral). \index{G\+U\+I\+Updater@{G\+U\+I\+Updater}!write\+Matrices@{write\+Matrices}}
+\index{write\+Matrices@{write\+Matrices}!G\+U\+I\+Updater@{G\+U\+I\+Updater}}
+\subsubsection[{\texorpdfstring{write\+Matrices()}{writeMatrices()}}]{\setlength{\rightskip}{0pt plus 5cm}void G\+U\+I\+Updater\+::write\+Matrices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_g_u_i_updater_a8d47fbed8c4e041cbc91c2e868000e4e}{}\label{class_g_u_i_updater_a8d47fbed8c4e041cbc91c2e868000e4e}
+Escribe a un archivo las coordenadas de los clavos y los ángulos de estos respecto a los huesos que les corresponden. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/eduar\+\_\+000/\+Documents/\+Visual Studio 2015/\+Projects/\+Navar\+Q\+A/\+Navar\+Q\+A/G\+U\+I\+Updater.\+h\item 
+C\+:/\+Users/eduar\+\_\+000/\+Documents/\+Visual Studio 2015/\+Projects/\+Navar\+Q\+A/\+Navar\+Q\+A/\+Generated\+Files/\+Debug/moc\+\_\+\+G\+U\+I\+Updater.\+cpp\item 
+C\+:/\+Users/eduar\+\_\+000/\+Documents/\+Visual Studio 2015/\+Projects/\+Navar\+Q\+A/\+Navar\+Q\+A/G\+U\+I\+Updater.\+cpp\end{DoxyCompactItemize}

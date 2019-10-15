@@ -1,0 +1,108 @@
+\hypertarget{class_custom_camera_library_1_1c_frame}{}\section{Custom\+Camera\+Library\+:\+:c\+Frame Class Reference}
+\label{class_custom_camera_library_1_1c_frame}\index{Custom\+Camera\+Library\+::c\+Frame@{Custom\+Camera\+Library\+::c\+Frame}}
+
+
+{\ttfamily \#include $<$marker.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_custom_camera_library_1_1c_frame_a20d6ba818242bb92ec7a74203bac5e49}{c\+Frame} ()
+\item 
+\hyperlink{class_custom_camera_library_1_1c_frame_acf0aa8c19e423193909409d9fdbf01ee}{$\sim$c\+Frame} ()
+\item 
+int \hyperlink{class_custom_camera_library_1_1c_frame_ad4605fcd7570099291cc810d517b2dd1}{marker\+Count} ()
+\item 
+\hyperlink{class_custom_camera_library_1_1_marker}{Marker} \hyperlink{class_custom_camera_library_1_1c_frame_af62553afad60e0e686a6316821bf7164}{marker} (int i)
+\item 
+void \hyperlink{class_custom_camera_library_1_1c_frame_aef8507b26e8431f53c66f921ccbde37c}{track\+Filtered\+Marker} (\hyperlink{class_custom_camera_library_1_1_marker}{Marker} the\+Marker, Mat \&camera\+Feed, \hyperlink{class_custom_camera_library_1_1c_frame}{c\+Frame} \&cframe, Mat \&frame)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \hyperlink{class_custom_camera_library_1_1_marker}{Marker} $>$ \hyperlink{class_custom_camera_library_1_1c_frame_a62085a52666a4b2af26043107850343d}{markers}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Clase que se utiliza como utilidad para ayudar a localizar los marcadores en escena. Ayuda a filtrar los marcadores que aprecen escena y visualiza en la pantalla aquellos marcadores que superan el filtro. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Custom\+Camera\+Library\+::c\+Frame@{Custom\+Camera\+Library\+::c\+Frame}!c\+Frame@{c\+Frame}}
+\index{c\+Frame@{c\+Frame}!Custom\+Camera\+Library\+::c\+Frame@{Custom\+Camera\+Library\+::c\+Frame}}
+\subsubsection[{\texorpdfstring{c\+Frame()}{cFrame()}}]{\setlength{\rightskip}{0pt plus 5cm}c\+Frame\+::c\+Frame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_custom_camera_library_1_1c_frame_a20d6ba818242bb92ec7a74203bac5e49}{}\label{class_custom_camera_library_1_1c_frame_a20d6ba818242bb92ec7a74203bac5e49}
+Constructor por omisión. \index{Custom\+Camera\+Library\+::c\+Frame@{Custom\+Camera\+Library\+::c\+Frame}!````~c\+Frame@{$\sim$c\+Frame}}
+\index{````~c\+Frame@{$\sim$c\+Frame}!Custom\+Camera\+Library\+::c\+Frame@{Custom\+Camera\+Library\+::c\+Frame}}
+\subsubsection[{\texorpdfstring{$\sim$c\+Frame()}{~cFrame()}}]{\setlength{\rightskip}{0pt plus 5cm}c\+Frame\+::$\sim$c\+Frame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_custom_camera_library_1_1c_frame_acf0aa8c19e423193909409d9fdbf01ee}{}\label{class_custom_camera_library_1_1c_frame_acf0aa8c19e423193909409d9fdbf01ee}
+Destructor por omisión. 
+
+\subsection{Member Function Documentation}
+\index{Custom\+Camera\+Library\+::c\+Frame@{Custom\+Camera\+Library\+::c\+Frame}!marker@{marker}}
+\index{marker@{marker}!Custom\+Camera\+Library\+::c\+Frame@{Custom\+Camera\+Library\+::c\+Frame}}
+\subsubsection[{\texorpdfstring{marker(int i)}{marker(int i)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Marker} Custom\+Camera\+Library\+::c\+Frame\+::marker (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_custom_camera_library_1_1c_frame_af62553afad60e0e686a6316821bf7164}{}\label{class_custom_camera_library_1_1c_frame_af62553afad60e0e686a6316821bf7164}
+Accede a un elemento en específico dentro del conjunto de marcadores detectado y lo retorna. 
+\begin{DoxyParams}{Parameters}
+{\em i} & un entero que representa la posición del marcador dentro del conjunto de marcadores dertectados. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+El marcador indicado 
+\end{DoxyReturn}
+\index{Custom\+Camera\+Library\+::c\+Frame@{Custom\+Camera\+Library\+::c\+Frame}!marker\+Count@{marker\+Count}}
+\index{marker\+Count@{marker\+Count}!Custom\+Camera\+Library\+::c\+Frame@{Custom\+Camera\+Library\+::c\+Frame}}
+\subsubsection[{\texorpdfstring{marker\+Count()}{markerCount()}}]{\setlength{\rightskip}{0pt plus 5cm}int Custom\+Camera\+Library\+::c\+Frame\+::marker\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_custom_camera_library_1_1c_frame_ad4605fcd7570099291cc810d517b2dd1}{}\label{class_custom_camera_library_1_1c_frame_ad4605fcd7570099291cc810d517b2dd1}
+Cuenta los marcadores que han pasado el filtro y se encuentran en escena, retorna un valor entero. \begin{DoxySeeAlso}{See also}
+\hyperlink{class_custom_camera_library_1_1c_frame_aef8507b26e8431f53c66f921ccbde37c}{track\+Filtered\+Marker()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+La acantidad de marcadores detectados en escena. 
+\end{DoxyReturn}
+\index{Custom\+Camera\+Library\+::c\+Frame@{Custom\+Camera\+Library\+::c\+Frame}!track\+Filtered\+Marker@{track\+Filtered\+Marker}}
+\index{track\+Filtered\+Marker@{track\+Filtered\+Marker}!Custom\+Camera\+Library\+::c\+Frame@{Custom\+Camera\+Library\+::c\+Frame}}
+\subsubsection[{\texorpdfstring{track\+Filtered\+Marker(\+Marker the\+Marker, Mat \&camera\+Feed, c\+Frame \&cframe, Mat \&frame)}{trackFilteredMarker(Marker theMarker, Mat &cameraFeed, cFrame &cframe, Mat &frame)}}]{\setlength{\rightskip}{0pt plus 5cm}void c\+Frame\+::track\+Filtered\+Marker (
+\begin{DoxyParamCaption}
+\item[{{\bf Marker}}]{the\+Marker, }
+\item[{Mat \&}]{camera\+Feed, }
+\item[{{\bf c\+Frame} \&}]{cframe, }
+\item[{Mat \&}]{frame}
+\end{DoxyParamCaption}
+)}\hypertarget{class_custom_camera_library_1_1c_frame_aef8507b26e8431f53c66f921ccbde37c}{}\label{class_custom_camera_library_1_1c_frame_aef8507b26e8431f53c66f921ccbde37c}
+Filtra los marcadores en la escena teniendo en cuenta el área del marcador y el número máximo de marcadores u objetos que aparezcan en escena. 
+\begin{DoxyParams}{Parameters}
+{\em the\+Marker} & representa un marcador en escena y toma las propiedades de éste. \\
+\hline
+{\em camera\+Feed} & refrencia de un fotograma de la cámara donde se buscan contornos que pueden ser marcadores en escena. \\
+\hline
+{\em cframe} & objeto de tipo \hyperlink{class_custom_camera_library_1_1c_frame}{c\+Frame} utilizado para acceder a las propiedades de su clase; actualizar/reiniciar el número de marcadores detectados. \\
+\hline
+{\em frame} & imágen de la cámara donde se van a dibujar los puntos que deben aparecer en el centro de los marcadores. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Custom\+Camera\+Library\+::c\+Frame@{Custom\+Camera\+Library\+::c\+Frame}!markers@{markers}}
+\index{markers@{markers}!Custom\+Camera\+Library\+::c\+Frame@{Custom\+Camera\+Library\+::c\+Frame}}
+\subsubsection[{\texorpdfstring{markers}{markers}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Marker}$>$ Custom\+Camera\+Library\+::c\+Frame\+::markers}\hypertarget{class_custom_camera_library_1_1c_frame_a62085a52666a4b2af26043107850343d}{}\label{class_custom_camera_library_1_1c_frame_a62085a52666a4b2af26043107850343d}
+variable pública que va almacenando la cantidad de marcadores en escena. Es un vector que se utiliza para ir guardando cada marcador detectado en la escena, al final de cada análisis que se le hace al fotograma, este vector tendrá almacenados cada uno de los marcadores dectados y que hayan pasado el filtro. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/eduar\+\_\+000/\+Documents/\+Visual Studio 2015/\+Projects/\+Navar\+Q\+A/\+Navar\+Q\+A/marker.\+h\item 
+C\+:/\+Users/eduar\+\_\+000/\+Documents/\+Visual Studio 2015/\+Projects/\+Navar\+Q\+A/\+Navar\+Q\+A/marker.\+cpp\end{DoxyCompactItemize}
